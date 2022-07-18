@@ -32,18 +32,34 @@ export const Name = styled.span`
 export const MyPicture = styled.img`
   width: 25vw;
   height: 70vh;
-  filter: saturate(0)
 `;
 export const InfoSection = styled.section`
-  background-color: rgb(191, 193, 194);
-  width: 75vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background-color: rgb(191, 193, 194);
+    border: solid red;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 export const PictureWrapper = styled.div`
-    width: fit-content;
+    width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
 `
 export const Main = styled.main`
     display: flex;
+` 
+export const SocialMedia = styled.img`
+  width: 5vw;
+  padding: 0.5rem;
+  cursor: pointer;
+  :hover{
+    transition: background-color 0.5s ease-in;
+    background-color: wheat;
+  }
+`
+export const SocialMediaWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 `

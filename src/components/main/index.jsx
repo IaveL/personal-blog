@@ -2,6 +2,8 @@ import React from "react";
 import * as S from "./styles";
 import Me from "../../assets/imgs/eu.png";
 import Header from "../Header";
+import Github from "../../assets/imgs/github.svg";
+import Instagram from "../../assets/imgs/instagram.svg";
 export default function index() {
   return (
     <S.Main>
@@ -14,9 +16,15 @@ export default function index() {
         </S.NameAndJobWrapper>
       </S.Sidebar>
       <S.InfoSection>
-          <Header/>
+        <div>
+          <Header />
+        </div>
         <S.PictureWrapper>
           <S.MyPicture src={Me} alt="foto de Igor, dono do blog" />
+          <S.SocialMediaWrapper>
+            <S.SocialMedia src={Github} alt="" />
+            <S.SocialMedia src={Instagram} alt="" />
+          </S.SocialMediaWrapper>
         </S.PictureWrapper>
       </S.InfoSection>
     </S.Main>
