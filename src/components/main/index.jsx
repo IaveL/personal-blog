@@ -4,7 +4,7 @@ import Me from "../../assets/imgs/eu.png";
 import Header from "../Header";
 import Github from "../../assets/imgs/github.svg";
 import Instagram from "../../assets/imgs/instagram.svg";
-export default function index() {
+export default function Main() {
   return (
     <S.Main>
       <S.Sidebar>
@@ -12,7 +12,7 @@ export default function index() {
           <S.NameTitle>
             My name is <S.Name>Igor Avelino</S.Name>
           </S.NameTitle>
-          <S.JobTitle>I'm a front-end developer</S.JobTitle>
+          <S.JobTitle>I'm a front-end developer.</S.JobTitle>
         </S.NameAndJobWrapper>
       </S.Sidebar>
       <S.InfoSection>

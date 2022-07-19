@@ -1,16 +1,16 @@
 import React from "react";
-import * as S from "./styles"
-
+import * as S from "./styles";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <S.Header>
-    <nav>
-      <S.Navbar>
-        <S.NavItem>Projetos</S.NavItem>
-        <S.NavItem>Sobre</S.NavItem>
-        <S.NavItem>Contato</S.NavItem>
-      </S.Navbar>
-    </nav>
+      <nav>
+        <S.Navbar>
+          <S.NavItem><Link to="/projetos">Projetos</Link></S.NavItem>
+          <S.NavItem><Link to="/sobre">Sobre</Link></S.NavItem>
+          <S.NavItem><Link to="/contato">Contato</Link></S.NavItem>
+        </S.Navbar>
+      </nav>
     </S.Header>
   );
 }

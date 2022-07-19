@@ -1,11 +1,11 @@
-import Header from "./components/Header";
 import GlobalStyle from "./assets/GlobalStyles";
-import Main from "./components/main"
+import AppRoutes from "./components/Routes";
+
 export default function App() {
   return (
     <>
       <GlobalStyle />
-      <Main/>
+      <AppRoutes />
     </>
   );
 }

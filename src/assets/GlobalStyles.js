@@ -12,5 +12,11 @@ const GlobalStyle = createGlobalStyle`
     li{
         list-style-type: none;
     }
+    :visited {
+        color: inherit;
+    }
+    a {
+        text-decoration: none;
+    }
 `
 export default GlobalStyle;
