@@ -35,7 +35,8 @@ export const NameTitle = styled.h1`
   }
   
   @media (max-width: 768px) {
-    width: 50vw; 
+    width: 70vw;
+    font-size: 3.1em; 
   }
   
   @media (max-width: 425px) {
@@ -103,7 +104,7 @@ export const JobTitle = styled.h2`
   position: relative;
 
   @media (max-width: 768px) {
-    top: 45vh;
+    top: 60vh;
   }
   
   @media (max-width: 425px) {
@@ -136,13 +137,17 @@ export const MyPicture = styled.img`
   background-color:  rgb(244,202,22);
   border-radius: 50%;
   height: 70vh;
+  :hover{
+    transition: background-color 0.75s ease-in-out;
+    background-color: rgb(191, 193, 194);
+  }
   @media(max-width: 1440px){
    width: 20vw;
    height: 40vh;
   }
   @media (max-width: 1024px) {
-      width: 35vw;
-      height: 50vh; 
+      width: 30vw;
+      height: 55vh; 
   }
   @media (max-width: 768px) {
       width: 50vw;
@@ -183,28 +188,36 @@ export const PictureWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  @media(max-width: 1024px){
+      width: 60vw;
+  }
+  @media (max-width: 768px) {
+      border: solid yellow;
+      width: 90vw;
+  }
 `;
 export const Main = styled.main`
   display: flex;
 `;
 export const SocialMedia = styled.img`
-  width: 5vw;
-  padding: 0.5rem;
+  width: 10vw;
+  height: 7vh;
   cursor: pointer;
   
-  @media (max-width: 768px) {
-    width: 8vw; 
+  :hover{
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) { 
+    width: 20vw;
   }
   
   @media (max-width: 425px) {
     display: none; 
   }
-  :hover {
-    transition: background-color 0.5s ease-in;
-    background-color: wheat;
-  }
 `;
 export const SocialMediaWrapper = styled.div`
+  height: 55vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
