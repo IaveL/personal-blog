@@ -6,6 +6,7 @@ function Header() {
     <S.Header>
       <nav>
         <S.Navbar>
+          <S.NavItem><Link to="/">Início</Link></S.NavItem>
           <S.NavItem><Link to="/projetos">Projetos</Link></S.NavItem>
           <S.NavItem><Link to="/sobre">Sobre</Link></S.NavItem>
           <S.NavItem><Link to="/contato">Contato</Link></S.NavItem>

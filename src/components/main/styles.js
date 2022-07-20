@@ -10,6 +10,16 @@ export const Sidebar = styled.aside`
   min-height: 100vh;
   position: relative;
   width: 25vw;
+  @media(max-width: 1440px){
+    width: 20vw; 
+  }
+  @media (max-width: 768px) {
+    width: 10vw;
+  }
+  
+  @media (max-width: 425px) {
+    width: 0; 
+  }
 `;
 export const NameTitle = styled.h1`
   color: #fff;
@@ -17,6 +27,29 @@ export const NameTitle = styled.h1`
   width: 20vw;
   margin: 0 0 1rem 1rem;
   position: relative;
+  @media(max-width: 1440px){
+    width: 30vw;
+  }
+  @media (max-width: 1024px) {
+      width: 35vw; 
+  }
+  
+  @media (max-width: 768px) {
+    width: 50vw; 
+  }
+  
+  @media (max-width: 425px) {
+    width: 95vw; 
+    font-size: 3em;
+  }
+  @media(max-width: 375px){
+    width: 100vw;
+    font-size: 3em;
+    top: 5%;
+  }
+  @media(max-width: 320px){
+    font-size: 2.5em;
+  }
   ::before,
   ::after {
     content: "";
@@ -29,6 +62,10 @@ export const NameTitle = styled.h1`
   ::before {
     background-color: black;
     animation: ${Appear} 1.5s 1s forwards;
+    
+  @media (max-width: 425px) {
+    background-color:  rgb(191, 193, 194);
+  }
   }
   ::after {
     width: 0.125em;
@@ -42,6 +79,20 @@ export const NameAndJobWrapper = styled.section`
   position: absolute;
   bottom: 15%;
   left: 15%;
+  @media (max-width: 1024px) {
+    left: 5%; 
+  }
+  @media (max-width: 768px) {
+    top: 10%;
+    width: 65vw;
+  }
+  @media(max-width: 425px){
+    width: 75vw;
+  }
+  @media(max-width: 375px){
+    width: 85vw;
+    top: 12%;
+  }
 `;
 
 export const JobTitle = styled.h2`
@@ -51,6 +102,13 @@ export const JobTitle = styled.h2`
   padding: 0.5rem;
   position: relative;
 
+  @media (max-width: 768px) {
+    top: 45vh;
+  }
+  
+  @media (max-width: 425px) {
+    top: 55vh; 
+  }
   ::before,
   ::after {
     content: "";
@@ -78,6 +136,24 @@ export const MyPicture = styled.img`
   background-color:  rgb(244,202,22);
   border-radius: 50%;
   height: 70vh;
+  @media(max-width: 1440px){
+   width: 20vw;
+   height: 40vh;
+  }
+  @media (max-width: 1024px) {
+      width: 35vw;
+      height: 50vh; 
+  }
+  @media (max-width: 768px) {
+      width: 50vw;
+  }
+  
+  @media (max-width: 425px) {
+    width: 75vw; 
+  }
+  @media(max-width: 375px){
+    width: 100vw;
+  }
 `;
 export const InfoSection = styled.section`
   background-color: rgb(191, 193, 194);
@@ -85,10 +161,27 @@ export const InfoSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  @media(max-width: 1440px){
+   width: 80vw; 
+  }
+  
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
+  
+  @media (max-width: 425px) {
+    width: 100vw; 
+  }
+  @media(max-width: 425px){
+    height: 100vh;
+  }
 `;
 export const PictureWrapper = styled.div`
   width: 45vw;
+  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
 `;
 export const Main = styled.main`
@@ -98,6 +191,14 @@ export const SocialMedia = styled.img`
   width: 5vw;
   padding: 0.5rem;
   cursor: pointer;
+  
+  @media (max-width: 768px) {
+    width: 8vw; 
+  }
+  
+  @media (max-width: 425px) {
+    display: none; 
+  }
   :hover {
     transition: background-color 0.5s ease-in;
     background-color: wheat;

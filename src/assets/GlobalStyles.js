@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
     body{
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Roboto Mono', monospace;
     }
     li{
         list-style-type: none;
