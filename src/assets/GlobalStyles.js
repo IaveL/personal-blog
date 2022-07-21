@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
         list-style-type: none;
     }
     :visited {
-        color: inherit;
+        color: white;
     }
     a {
         text-decoration: none;

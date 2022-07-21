@@ -10,6 +10,9 @@ export const Header = styled.header`
   @media(max-width: 1440px){
     width: 100vw;
   }
+  @media (max-width: 425px) {
+        border: solid red;
+    }
 
 `;
 export const Navbar = styled.ul`
@@ -20,6 +23,9 @@ export const Navbar = styled.ul`
     width: 100vw;
     justify-content: space-around;
   }
+  @media (max-width: 320px) {
+        justify-content: space-evenly;
+    }
 `;
 export const NavItem = styled.li`
   border: solid rgba(0, 0, 0, 0);
@@ -34,6 +40,6 @@ export const NavItem = styled.li`
     border-bottom: solid 2px yellow;
   }
   @media(max-width: 425px){
-    font-size: 1em;
+    font-size: 0.8em;
   }
 `;

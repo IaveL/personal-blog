@@ -192,7 +192,6 @@ export const PictureWrapper = styled.div`
       width: 60vw;
   }
   @media (max-width: 768px) {
-      border: solid yellow;
       width: 90vw;
   }
 `;

@@ -30,6 +30,9 @@ export const AboutContainer = styled.section`
   @media(max-width: 375px){
     height: 220vh;
   }
+  @media (max-width: 320px) {
+      height: 280vh;
+  }
 `;
 
 export const AboutTextContainer = styled.section`
@@ -64,6 +67,9 @@ export const AboutTextContainer = styled.section`
   @media(max-width: 375px){
     width: 95vw;
     height: 160vh;
+  }
+  @media (max-width: 320px) {
+      height: 200vh;
   }
 `;
 

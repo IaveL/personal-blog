@@ -8,9 +8,15 @@ export default function Projetos() {
     <>
       <Header />
       <S.WorkSection>
-        <h1>Meus projetos:</h1>
+        <h1 style={{textAlign: "center"}}>Meus projetos:</h1>
         <S.CardsWrapper>
-        {projetos.map(projeto => <Card key={projeto.id} name={projeto.name} />)}
+          {projetos.map((projeto) => (
+            <Card key={projeto.id}
+             name={projeto.name} 
+             img={projeto.img}
+             link={projeto.link} 
+             />
+          ))}
         </S.CardsWrapper>
       </S.WorkSection>
     </>
