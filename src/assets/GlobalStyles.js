@@ -18,5 +18,8 @@ const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
     }
+     a:link {
+        color: inherit;
+    }
 `
 export default GlobalStyle;
